@@ -1,16 +1,3 @@
-Template.login.rendered = ->
-		$(document).ready ->
-      $('.popup-with-zoom-anim').magnificPopup
-        type: 'inline'
-        fixedContentPos: false
-        fixedBgPos: true
-        overflowY: 'auto'
-        closeBtnInside: true
-        preloader: false
-        midClick: true
-        removalDelay: 300
-        mainClass: 'my-mfp-zoom-in'
-
 Template.login.events
   'click #logIn': (evt, tmpl) ->
     evt.preventDefault()
@@ -25,15 +12,27 @@ Template.login.events
 
   'click #signUp': (evt, tmpl) ->
     evt.preventDefault()
-    console.log "Sign up"
-    name = $("#name}").val()
+    name = $("#name").val()
     username = $("#username").val()
     email = $("#email").val()
     password = $("#passSignUp").val()
-    console.log name, username, email, password
     if username && name && password && email
       Meteor.call "newUser", name, username, email, password, (error, result) ->
         if error
           console.log "false"
         else
           console.log "result", result
+
+  'click #sign-up': (evt, tmpl) ->
+    $(".log").hide()
+    $(".signup").show()
+    $("#login").hide()
+    $(".signup").show()
+    $('.social_icons').hide()
+
+  'click #log-in': (evt, tmpl) ->
+    $(".log").show()
+    $(".signup").hide()
+    $("#login").show()
+    $(".signup").hide()
+    $('.social_icons').show()

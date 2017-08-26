@@ -103,6 +103,9 @@ i.zmdi.zmdi-washing-machine {
     margin-bottom: 9px;
     font-weight: 700;
 }
+.signup {
+  display: none;
+}
 .profile-ser-grids h4 {
     font-size: 16px;
     color: #000000;
