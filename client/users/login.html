@@ -1,0 +1,70 @@
+<template name="login">
+  <div class="agileinfo-dot">
+    <h1>Sign In Form</h1>
+    <div class="login-section">
+      <div class="login-w3l">
+        <i class="zmdi zmdi-washing-machine"></i>
+        <h2 class="sub-head-w3-agileits">Sign in</h2>
+        <div class="login-form">
+          <form>
+            <div class="input">
+              <i class="fa fa-user" aria-hidden="true"></i> <input type="text" id="user" class="user" name="username" placeholder="Username" required="" />
+            </div>
+            <div class="input">
+              <i class="fa fa-unlock-alt" aria-hidden="true"></i> <input type="password" id="password" class="lock" name="password" placeholder="Password" required="" />
+            </div>
+            <div class="signin-rit">
+              <span class="checkbox1">
+                <label class="checkbox"><input type="checkbox" name="checkbox">Remember me</label>
+              </span>
+              <a class="forgot" href="#">Forgot Password?</a>
+              <div class="clear"> </div>
+            </div>
+            <input type="button" value="Sign in" id="logIn">
+          </form>
+          <p>Don't have an account?<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog"> Sign up</a></p>
+        </div>
+        <!-- //login -->
+        <div class="social_icons agileinfo">
+          <ul class="top-links">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile-agileits bg-color-agile">
+        <h3>Get Your Best Laundry</h3>
+        <p>Vestibulum eget nisl elementum, pellentesque eros ac,
+          finibus dolor. Curabitur non auctor metus. Praesent in justo faucibus,
+          placerat libero ac, dolor sit amet auctor metus.</p>
+          <h4>Get instant wash option</h4>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--//login-->
+      <div class="pop-up">
+				<div id="small-dialog" class="mfp-hide book-form">
+					<h3 class="sub-head-w3-agileits">Sign Up</h3>
+					<div class="login-form">
+						<form>
+							<div class="input">
+								<i class="fa fa-user" aria-hidden="true"></i> <input type="text" class="user" id="name" name="name" placeholder="Name" required="" />
+							</div>
+              <div class="input">
+								<i class="fa fa-unlock-alt" aria-hidden="true"></i> <input type="text" name="username" id="username" class="password" placeholder="Username" required=""/>
+							</div>
+							<div class="input">
+								<i class="fa fa-envelope" aria-hidden="true"></i> <input type="email" name="Email" id="email" class="email" placeholder="Email" required=""/>
+							</div>
+							<div class="input">
+								<i class="fa fa-unlock-alt" aria-hidden="true"></i> <input type="password" name="Password" id="passSignUp" class="password" placeholder="Password" required=""/>
+							</div>
+							<input type="button" value="Sign Up" id="signUp">
+						</form>
+					</div>
+				</div>
+			</div>
+    </div>
+  </template>
