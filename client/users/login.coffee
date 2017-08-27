@@ -25,6 +25,7 @@ Template.login.events
 
   'click #sign-up': (evt, tmpl) ->
     $(".log").hide()
+    $('.social_line_wrapper').hide()
     $(".signup").show()
     $("#login").hide()
     $(".signup").show()
@@ -32,7 +33,15 @@ Template.login.events
 
   'click #log-in': (evt, tmpl) ->
     $(".log").show()
+    $('.social_line_wrapper').show()
     $(".signup").hide()
     $("#login").show()
     $(".signup").hide()
     $('.social_icons').show()
+
+  'click .fb-login': (evt, tmpl) ->
+    Meteor.loginWithFacebook requestPermissions: ['public_profile', 'email'], (error) ->
+      if error
+        console.log error
+      else
+        console.log Meteor.user()

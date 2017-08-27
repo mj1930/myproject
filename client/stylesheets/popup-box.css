@@ -259,22 +259,22 @@ button::-moz-focus-inner {
 .login input[type="text"],.login input[type="password"]{
 	width:90%;
 	padding:5px;
-	margin:3px 0;
+	margin:5px 0;
 	border: 1px solid #a63d56;
 	outline: none !important;
 }
 .signup input[type="text"]{
 	width: 44.5%;
 	padding: 5px;
-	margin: 10px 0;
+	margin: 5px 0;
 	outline: none;
 	background: #EBEBEB;
 	border: solid 1px #222;
 }
-.signup input.email[type="text"],.signup input[type="password"]{
+.signup input[type="email"],.signup input[type="text"],.signup input[type="password"]{
 	width: 90%;
 	padding: 5px;
-	margin: 10px 0;
+	margin: 5px 0 10px;
 	outline: none;
 	background: #EBEBEB;
 	border: solid 1px #222;

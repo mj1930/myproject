@@ -188,13 +188,14 @@ a.one-w3ls {
     font-weight: 200;
     letter-spacing: 1px;
     color: #ececec;
-    padding: 8px 0px 8px 10px;
+    padding: 8px 0px 0px 10px;
     border: none;
     width: 85%;
     background: transparent;
+    margin: 5px 0 10px;
 }
 .login-form .input{
-    margin: 0 0 1em;
+    margin: 0 0;
     border: none;
     border-bottom: 1px solid #ececec;
     background: rgba(90, 90, 90, 0.15);
@@ -211,6 +212,8 @@ a.one-w3ls {
 .login-section {
     width: 55%;
     margin: 0 auto;
+}#signUp {
+  margin-top: 20px !important;
 }
 #logIn, #signUp {
     background: #ffffff;
@@ -230,7 +233,7 @@ a.one-w3ls {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
 }
-.login-form input[type="submit"]:hover {
+#logIn:hover, #signUp:hover {
     background: #8BC34A;
     color: #fff;
 }
@@ -245,7 +248,7 @@ a.one-w3ls {
     font-weight: 200;
     letter-spacing: 1px;
     color: #ececec;
-    padding: 8px 0px 8px 10px;
+    padding: 8px 0px 0px 10px;
     border: none;
     width: 85%;
     background: transparent;
@@ -399,7 +402,7 @@ ul.top-links li a i.fa {
     -ms-border-radius: 50%;
 }
 ul.top-links {
-    margin: 2em 0 0;
+    margin: 1.5em 0 0;
 }
 .top-links li a i.fa.fa-facebook {
     color: #3b5998;
@@ -411,9 +414,9 @@ ul.top-links {
 .top-links li a i.fa.fa-twitter {
     color: #00ACEE;
 }
-.top-links li a i.fa-twitter:hover {
+.top-links li a i.fa-instagram:hover {
     color: #fff;
-    background-color: #00ACEE;
+    background-color: #fb3958;
 }
 .top-links li a i.fa.fa-linkedin {
     color: #0077B5;
@@ -429,9 +432,41 @@ ul.top-links {
     color: #fff;
     background-color: #DD4B39;
 }
+.social_line_wrapper{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}.left_line,.right_line{
+  float: left;
+  width: calc(50% - 22px);
+  margin-top: 18px;
+  height: 2px;
+  background: #fff;
+}.center_line{
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 100%;
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+  border: 2px solid #fff;
 
+  transition: ease all 0.3s;
+  -webkit-transition: ease all 0.3s;
+  -moz-transition: ease all 0.3s;
+  -o-transition: ease all 0.3s;
+}.center_line:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: default;
+}
 .profile-agileits.bg-color-agile {
-    background: url(/right.jpg) no-repeat 0px 0px;
+    background: linear-gradient(
+      rgba(38, 38, 38, 0.52),
+      rgba(38, 38, 38, 0.52)
+    ),url(/right.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 530px;
 }
@@ -441,7 +476,7 @@ ul.top-links {
     font-weight: 400;
     text-transform: capitalize;
     margin-top: 4em;
-	margin-bottom: 1em;
+  	margin-bottom: 1em;
 }
 .profile-agileits h4 {
     color: #fff;
