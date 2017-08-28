@@ -6,6 +6,7 @@
         <i class="zmdi zmdi-washing-machine"></i>
         <h2 class="sub-head-w3-agileits log">Sign in</h2>
         <h2 class="sub-head-w3-agileits signup">Sign Up</h2>
+        <h2 class="sub-head-w3-agileits forgot_pass">Forgot Password</h2>
         <div class="login-form">
           <div id="login">
             <form>
@@ -19,7 +20,7 @@
                 <span class="checkbox1">
                   <label class="checkbox"><input type="checkbox" name="checkbox">Remember me</label>
                 </span>
-                <a class="forgot" href="#">Forgot Password?</a>
+                <a class="forgot" href="javascript:void(0)" id="forgotpass">Forgot Password?</a>
                 <div class="clear"> </div>
               </div>
               <input type="button" value="Sign in" id="logIn">
@@ -43,9 +44,18 @@
                 <i class="fa fa-unlock-alt" aria-hidden="true"></i> <input type="password" name="Password" id="passSignUp" class="password" placeholder="Password" required=""/>
               </div>
               <input type="button" value="Sign Up" id="signUp">
-                <p>Already have an account?<a href="javascript:void(0)" class="book" id="log-in"> Sign in</a></p>
+              <p>Already have an account?<a href="javascript:void(0)" class="book" id="log-in"> Sign in</a></p>
             </form>
 
+          </div>
+          <div class="forgot_pass">
+            <form>
+              <div class="input">
+                <i class="fa fa-envelope" aria-hidden="true"></i> <input type="email" name="Email" id="forgot_email" class="email" placeholder="Email" required=""/>
+              </div>
+              <input type="button" value="Reset Password" id="forgot_password">
+              <p>Remember password?<a href="javascript:void(0)" class="book" id="log-in"> Sign in</a></p>
+            </form>
           </div>
         </div>
         <div class="social_line_wrapper">

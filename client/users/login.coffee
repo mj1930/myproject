@@ -1,3 +1,6 @@
+Template.login.rendered = ->
+  Meteor.subscribe "users"
+
 Template.login.events
   'click #logIn': (evt, tmpl) ->
     evt.preventDefault()
@@ -24,20 +27,39 @@ Template.login.events
           console.log "result", result
 
   'click #sign-up': (evt, tmpl) ->
+    evt.preventDefault()
     $(".log").hide()
     $('.social_line_wrapper').hide()
     $(".signup").show()
-    $("#login").hide()
     $(".signup").show()
+    $("#login").hide()
     $('.social_icons').hide()
 
   'click #log-in': (evt, tmpl) ->
+    evt.preventDefault()
     $(".log").show()
     $('.social_line_wrapper').show()
     $(".signup").hide()
     $("#login").show()
     $(".signup").hide()
     $('.social_icons').show()
+    $('.forgot_pass').hide()
+
+  'click #forgotpass': (evt, tmpl) ->
+    evt.preventDefault()
+    $(".log").hide()
+    $('.social_line_wrapper').hide()
+    $("#login").hide()
+    $('.social_icons').hide()
+    $('.forgot_pass').show()
+
+  'click #forgot_password': (evt, tmpl) ->
+    evt.preventDefault()
+    email = $("#forgot_email").val()
+    if email
+      user = Meteor.users.findOne({"emails.address": email})
+      if user?.emails[0]?.address
+        Accounts.forgotPassword { "email": user.emails[0].address}
 
   'click .fb-login': (evt, tmpl) ->
     evt.preventDefault()
