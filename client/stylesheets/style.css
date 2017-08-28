@@ -212,8 +212,12 @@ a.one-w3ls {
 .login-section {
     width: 55%;
     margin: 0 auto;
-}#signUp {
+}
+#signUp {
   margin-top: 20px !important;
+}
+input[type="button"]:disabled {
+    background: #ffffff !important;
 }
 #logIn, #signUp, #forgot_password {
     background: #ffffff;
