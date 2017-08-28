@@ -411,19 +411,19 @@ ul.top-links {
     color: #fff;
     background-color: #46629E;
 }
-.top-links li a i.fa.fa-twitter {
-    color: #00ACEE;
+.top-links li a i.fa.fa-instagram {
+    color: #fb3958;;
 }
 .top-links li a i.fa-instagram:hover {
     color: #fff;
     background-color: #fb3958;
 }
-.top-links li a i.fa.fa-linkedin {
-    color: #0077B5;
+.top-links li a i.fa.fa-twitter {
+    color: #00aced;
 }
-.top-links li a i.fa-linkedin:hover {
+.top-links li a i.fa-twitter:hover {
     color: #fff;
-    background-color: #0077B5;
+    background-color: #00aced;
 }
 .top-links li a i.fa.fa-google-plus {
     color: #DD4B39;
@@ -696,6 +696,7 @@ ul.top-links {
 	h1 {
 		font-size: 33px;
 	}
+  .agileinfo {     margin-top: -10px; }
 	h2.sub-head-w3-agileits, h3.sub-head-w3-agileits {
 		margin: 1.4em 0 0.5em;
 		font-size: 20px;
@@ -785,6 +786,7 @@ ul.top-links {
 	h1 {
 		font-size: 27px;
 	}
+  .agileinfo {     margin-top: -10px; }
 	.login-form input[type="text"], .login-form input[type="password"], .login-form input[type="email"] {
 		font-size: 13px;
 	}
@@ -865,6 +867,7 @@ ul.top-links {
 		font-size: 21px;
 		letter-spacing: 2px;
 	}
+  .agileinfo {     margin-top: -15px; }
 	.login-w3l, .profile-agileits {
 		padding: 30px 25px;
 	}

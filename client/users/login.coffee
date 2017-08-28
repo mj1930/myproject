@@ -40,8 +40,25 @@ Template.login.events
     $('.social_icons').show()
 
   'click .fb-login': (evt, tmpl) ->
+    evt.preventDefault()
     Meteor.loginWithFacebook requestPermissions: ['public_profile', 'email'], (error) ->
       if error
         console.log error
+      else
+        console.log Meteor.user()
+
+  'click .gplus-login': (evt, tmpl) ->
+    evt.preventDefault()
+    Meteor.loginWithGoogle (error) ->
+      if error
+        console.log error
+      else
+        console.log Meteor.user()
+
+  'click .twitter-login': (evt, tmpl) ->
+    evt.preventDefault()
+    Meteor.loginWithTwitter (error) ->
+      if error
+        console.log errror
       else
         console.log Meteor.user()
